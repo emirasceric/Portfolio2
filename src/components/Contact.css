@@ -1,0 +1,47 @@
+/* Contact.css */
+
+#contacts-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ovo će centrirati sadržaj po visini */
+  background-color: transparent; /* Svijetlo plava pozadina */
+ 
+
+}
+
+.parallax-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Možete prilagoditi ovu vrijednost */
+  margin: 0 auto; /* Centrira wrapper unutar sekcije */
+  text-align: center; /* Centrira tekst i ikone unutar wrappera */
+ 
+}
+
+.section .fixed p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem; /* Daje prostor između citata i ikona */
+  color: aliceblue;
+  
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Razmak između ikona */
+  
+
+}
+
+.image-link img {
+  width: 50px; /* Početna veličina ikona */
+  transition: transform 0.3s ease; /* Animacija za povećanje */
+  background-color: aliceblue;
+ 
+}
+
+.image-link:hover img {
+  transform: scale(1.2); /* Povećava ikonu za 20% na hover */
+}
+
+/* Ako želite dodatne stilove ili prilagodbe, slobodno prilagodite ovaj CSS */

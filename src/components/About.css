@@ -1,0 +1,48 @@
+#about-section {
+    display: block;
+    text-align: center;
+    min-height: 100vh;
+    color: white; /* This sets the text color to white */
+    padding: 80px 80px 0; /* This will add 80px padding at the top and 80px padding at the sides for large screens */
+   z-index: 1;
+  
+  
+}
+
+.text-centered-content {
+ background-color: rgba(32, 107, 151, 0.15);
+ border-radius: 5%;
+
+}
+
+
+  @media (max-width: 1200px) {
+    #about-section {
+      padding: 80px 60px 0; /* Slightly smaller padding for medium screens */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #about-section {
+      padding: 80px 40px 0; /* Even smaller padding for small screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #about-section {
+      padding: 80px 20px 0; /* Smallest padding for mobile and very small screens */
+    }
+  }
+  
+  #about-section::before {
+    content: '';
+    height: 100%;
+    float: left;
+    visibility: hidden;
+  }
+  
+  .contact-link {
+    color: #fb8a8a  ;
+    font-weight: bold;
+  }
+  

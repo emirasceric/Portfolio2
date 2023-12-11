@@ -1,0 +1,113 @@
+/* Osnovne postavke za navigaciju */
+nav {
+  position: fixed; /* Da bude uvijek prisutno i prati korisnika dok se skroluje */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Da bude iznad svih ostalih elemenata */
+  background: transparent;
+  background-color: transparent;
+  color: #f6f6f6;
+  padding: 2%;
+}
+body > nav {
+  background: transparent !important;
+  color: #ffffff;
+}
+
+
+/* Osnovni stilovi za a tagove */
+a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  transition: color 0.3s; /* Dodano za tranziciju pozadine */
+  padding-bottom: 2px;
+  text-transform: uppercase;
+  
+  background-clip: text; /* Primjenjuje pozadinsku sliku samo na tekst */
+  -webkit-background-clip: text; /* Za starije verzije web preglednika */
+  color: white; /* Postavlja boju teksta na prozirnu */
+  background-image: linear-gradient(transparent, transparent); /* Postavlja transparentnu pozadinu kao osnovu */
+}
+
+/* Na hover, a tagovi će primijeniti gradijentnu pozadinu */
+a:hover {
+  background-image: linear-gradient(to right, #72bcf8, #ffffff); 
+  color: transparent; /* Postavlja boju teksta na prozirnu */
+}
+
+
+/* EMIR u gornjem levom uglu i boja */
+.emir {
+  color: #ffffff;
+}
+
+/* AŠĆERIĆ u gornjem levom uglu i boja */
+.asceric {
+  color: #72bcf8;
+}
+
+/* Efekat svetlucanja za EMIR i AŠĆERIĆ na hover */
+.website_name:hover .emir, .website_name:hover .asceric {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4), 
+               0 0 10px rgba(255, 255, 255, 0.4),
+               0 0 15px rgba(255, 255, 255, 0.4);
+}
+.website_name{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Animacija linije ispod a tagova na hover */
+a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #72bcf8;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+
+/* Spacing između elemenata */
+.menu_links .link {
+  margin-right: 20px;
+}
+
+.menu_links .link:last-child {
+  margin-right: 0;
+}
+
+/* Responsive stilovi */
+@media only screen and (max-width: 768px) {
+  .menu_links {
+      display: none;
+  }
+  .menu_icon {
+      display: block;
+  }
+}
+
+/* Stil za burger menu kada je aktiviran */
+.menu_icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu_icon .icon {
+  /* Stil za linije burger ikonice, prilagodite po potrebi */
+}
+
+/* Kada je burger menu aktiviran, linkovi će biti vidljivi */
+.menu_icon.active + .menu_links {
+  display: block;
+  /* Ostale stilove dodajte ovdje kako biste prilagodili prikaz za mobilne uređaje */
+}
