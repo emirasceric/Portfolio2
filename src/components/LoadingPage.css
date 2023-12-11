@@ -5,6 +5,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center; 
+   
  }
  
  body,
@@ -15,6 +16,8 @@ body {
   margin-left: 0%;
   margin-top: 5%;
   padding: -50%;
+  overflow-y: hidden; /* Onemogućava vertikalno skrolovanje */
+
  }
  #mainSVG {
     transform: scale(3); /* povećava SVG za 50% */
