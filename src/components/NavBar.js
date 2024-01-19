@@ -154,16 +154,7 @@ const Navbar = () => {
           >
             tech
           </a>
-          <a
-            href="#biz"
-            className="link"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("biz-section");
-            }}
-          >
-            biz
-          </a>
+          
 
           <a
             href="#contacts"

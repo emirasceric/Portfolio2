@@ -1,12 +1,15 @@
 #about-section {
-    display: block;
-    text-align: center;
-    min-height: 100vh;
-    color: white; /* This sets the text color to white */
-    padding: 80px 80px 0; /* This will add 80px padding at the top and 80px padding at the sides for large screens */
-   z-index: 1;
-  
-  
+  display: flex; /* Koristi Flexbox za fleksibilan raspored */
+  flex-direction: column; /* Stavke su jedna ispod druge */
+  align-items: center; /* Centriraj sadržaj horizontalno */
+  text-align: center;
+  min-height: 90vh;
+  color: white;
+  padding: 80px 20px; /* Početni padding */
+  background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */
+  border-radius: 5%;
+  z-index: 1;
+  margin: 0 0 0 0;
 }
 
 .text-centered-content {
@@ -14,25 +17,30 @@
  border-radius: 5%;
 
 }
+@media (min-width: 300px) {
+  #about-section {
+    padding: 80px 40px; /* Veći padding na širim ekranima */
+    font-size: 100%;
+  }
+}
 
-
-  @media (max-width: 1200px) {
-    #about-section {
-      padding: 80px 60px 0; /* Slightly smaller padding for medium screens */
-    }
+@media (min-width: 500px) {
+  #about-section {
+    padding: 80px 40px; /* Veći padding na širim ekranima */
+    font-size: 100%;
   }
+}
   
-  @media (max-width: 800px) {
-    #about-section {
-      padding: 80px 40px 0; /* Even smaller padding for small screens */
-    }
+@media (min-width: 800px) {
+  #about-section {
+    padding: 80px 60px;
   }
-  
-  @media (max-width: 500px) {
-    #about-section {
-      padding: 80px 20px 0; /* Smallest padding for mobile and very small screens */
-    }
+}
+@media (min-width: 1200px) {
+  #about-section {
+    padding: 80px 80px;
   }
+}
   
   #about-section::before {
     content: '';

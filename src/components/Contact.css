@@ -4,15 +4,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Ovo će centrirati sadržaj po visini */
+  height: 100vh; /* Centriranje sadržaja po visini */
   background-color: transparent; /* Svijetlo plava pozadina */
- 
-
 }
+
 
 .parallax-wrapper {
   width: 100%;
-  max-width: 1200px; /* Možete prilagoditi ovu vrijednost */
+  max-width: 100%; /* Možete prilagoditi ovu vrijednost */
   margin: 0 auto; /* Centrira wrapper unutar sekcije */
   text-align: center; /* Centrira tekst i ikone unutar wrappera */
  
@@ -44,4 +43,22 @@
   transform: scale(1.2); /* Povećava ikonu za 20% na hover */
 }
 
-/* Ako želite dodatne stilove ili prilagodbe, slobodno prilagodite ovaj CSS */
+@media (max-width: 800px) {
+  .parallax-wrapper {
+    max-width: 600px; /* Manja maksimalna širina na malim ekranima */
+  }
+
+  .section .fixed p {
+    font-size: 1rem; /* Manji font za male ekrane */
+  }
+
+  .image-container {
+    flex-wrap: wrap; /* Omogućava zamotavanje ikona na malim ekranima */
+  }
+
+  .image-link img {
+    width: 40px; /* Manja veličina ikona na malim ekranima */
+  }
+}
+
+

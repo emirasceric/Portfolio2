@@ -1,42 +1,42 @@
 /* Osnovne postavke za navigaciju */
 nav {
-  position: fixed; /* Da bude uvijek prisutno i prati korisnika dok se skroluje */
-  top: 0;
+  display: flex;
+  justify-content: center; /* Centriranje sadržaja horizontalno */
+  align-items: center; /* Centriranje sadržaja vertikalno */
+  position: fixed;
+  top: 5%;
   left: 0;
+  right: 0;
   width: 100%;
-  z-index: 1000; /* Da bude iznad svih ostalih elemenata */
+  z-index: 1000;
   background: transparent;
-  background-color: transparent;
   color: #f6f6f6;
-  padding: 2%;
 }
-body > nav {
+
+body  nav {
   background: transparent !important;
   color: #ffffff;
 }
-
 
 /* Osnovni stilovi za a tagove */
 a {
   text-decoration: none;
   color: #ffffff;
   position: relative;
-  transition: color 0.3s; /* Dodano za tranziciju pozadine */
+  transition: color 0.3s;
   padding-bottom: 2px;
   text-transform: uppercase;
-  
-  background-clip: text; /* Primjenjuje pozadinsku sliku samo na tekst */
-  -webkit-background-clip: text; /* Za starije verzije web preglednika */
-  color: white; /* Postavlja boju teksta na prozirnu */
-  background-image: linear-gradient(transparent, transparent); /* Postavlja transparentnu pozadinu kao osnovu */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white;
+  background-image: linear-gradient(transparent, transparent);
 }
 
 /* Na hover, a tagovi će primijeniti gradijentnu pozadinu */
 a:hover {
   background-image: linear-gradient(to right, #72bcf8, #ffffff); 
-  color: transparent; /* Postavlja boju teksta na prozirnu */
+ 
 }
-
 
 /* EMIR u gornjem levom uglu i boja */
 .emir {
@@ -67,7 +67,7 @@ a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #72bcf8;
+  background-color: rgb(255, 255, 255);
   visibility: hidden;
   transition: all 0.3s ease-in-out;
 }
@@ -86,28 +86,79 @@ a:hover::before {
   margin-right: 0;
 }
 
+/* Stil za burger menu */
+.menu_icon {
+ 
+  cursor: pointer;
+  background-color: #ff0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.menu_icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.menu_icon .navicon:before,
+.menu_icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.menu_icon .navicon:before {
+  top: 5px;
+}
+
+.menu_icon .navicon:after {
+  top: -5px;
+}
+
 /* Responsive stilovi */
 @media only screen and (max-width: 768px) {
+  nav {
+    padding: 4%;
+  }
+
+  .website_name {
+    font-size: 24px;
+  }
+
+  .menu_links .link {
+    margin-right: 10px;
+    font-size: 18px;
+  }
+
   .menu_links {
-      display: none;
+    position: absolute;
+    top: 100%; /* Da se prikaže ispod navbara */
+    left: 0; /* Poravnajte s lijevom stranom */
+    width: 100%; /* Širina pokriva cijeli ekran */
+    display: none;
+   
   }
+
   .menu_icon {
-      display: block;
+    display: block;
   }
-}
 
-/* Stil za burger menu kada je aktiviran */
-.menu_icon {
-  display: none;
-  cursor: pointer;
-}
-
-.menu_icon .icon {
-  /* Stil za linije burger ikonice, prilagodite po potrebi */
-}
-
-/* Kada je burger menu aktiviran, linkovi će biti vidljivi */
-.menu_icon.active + .menu_links {
-  display: block;
-  /* Ostale stilove dodajte ovdje kako biste prilagodili prikaz za mobilne uređaje */
+  .menu_icon.active + .menu_links {
+    display: block;
+  }
 }
