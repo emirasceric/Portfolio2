@@ -140,12 +140,13 @@ span {
     }}
     @media (max-width: 480px) {
       #title {
-        font-size: 16px; /* Još manja veličina fonta za naslov na vrlo malim zaslonima */
+        font-size: 18px; /* Još manja veličina fonta za naslov na vrlo malim zaslonima */
         letter-spacing: 13px; /* Još manji razmak između slova */
+     
       }
     
       #subtitle {
-        font-size: 16px; /* Još manja veličina fonta za podnaslov */
+        font-size: 18px; /* Još manja veličina fonta za podnaslov */
         letter-spacing: 2px; /* Manji razmak između slova */
       }}
 

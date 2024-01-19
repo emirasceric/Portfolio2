@@ -112,7 +112,8 @@ function LoadingPage() {
         <li>N</li>
         <li>G</li>
       </ul>
-      <p className='loading_about'>COPYRIGHT &copy; 2023 ALL RIGHTS RESERVED TO SOME GUY FROM STACKOVERFLOW &reg; <span style={{ color: '#fb8a8a' }}>EMIR</span>
+      <p className='loading_about'>COPYRIGHT &copy; 2024  
+      &reg; <span style={{ color: ' #9ed6f0' }}>EMIR</span>
 ASCERIC</p>
     
       </div>
