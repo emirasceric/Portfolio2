@@ -5,6 +5,19 @@
   text-align: center;
   min-height: 90vh;
   color: white;
+  
+  background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */
+  border-radius: 5%;
+  z-index: 1;
+  margin: -5% 0 0 0;
+}
+#about-section-text {
+  display: flex; /* Koristi Flexbox za fleksibilan raspored */
+  flex-direction: column; /* Stavke su jedna ispod druge */
+  align-items: center; /* Centriraj sadržaj horizontalno */
+  text-align: center;
+  min-height: 90vh;
+  color: white;
   padding: 80px 20px; /* Početni padding */
   background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */
   border-radius: 5%;
@@ -12,45 +25,39 @@
   margin: 0 0 0 0;
 }
 
-.text-centered-content {
- background-color: rgba(32, 107, 151, 0.15);
- border-radius: 5%;
 
-}
-@media (min-width: 300px) {
+
+@media (max-width: 480px) {
   #about-section {
-    padding: 80px 40px; /* Veći padding na širim ekranima */
+    
     font-size: 100%;
+    margin: -20% 0 0 0 ;
   }
+
 }
 
-@media (min-width: 500px) {
+@media (max-width: 768px) {
   #about-section {
     padding: 80px 40px; /* Veći padding na širim ekranima */
     font-size: 100%;
   }
 }
   
-@media (min-width: 800px) {
+@media (max-width: 1023px) {
   #about-section {
     padding: 80px 60px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1023px) {
   #about-section {
     padding: 80px 80px;
   }
 }
   
-  #about-section::before {
-    content: '';
-    height: 100%;
-    float: left;
-    visibility: hidden;
-  }
+
   
   .contact-link {
-    color: #fb8a8a  ;
+    color: #fd0000c7  ;
     font-weight: bold;
   }
   

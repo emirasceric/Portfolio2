@@ -62,7 +62,7 @@ const About = () => {
   return (
     <section ref={aboutSection} id="about-section">
       <div>
-        <div className="text-centered-content" id="about-section">
+        <div className="text-centered-content" id="about-section-text">
           <p>
             ABOUT ME
             <br />
