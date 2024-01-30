@@ -18,6 +18,9 @@ function LoadingPage() {
       visibility: 'visible'
     });
 
+ 
+  
+
     function animate(el, count) {
       const tl = gsap.timeline({
         defaults: {
