@@ -33,7 +33,7 @@ a {
 }
 
 /* Na hover, a tagovi će primijeniti gradijentnu pozadinu */
-a:hover {
+#menu_links:hover {
   background-image: linear-gradient(to right, #72bcf8, #ffffff); 
  
 }
@@ -60,7 +60,7 @@ a:hover {
 }
 
 /* Animacija linije ispod a tagova na hover */
-a::before {
+.menu_links a::before {
   content: '';
   position: absolute;
   width: 0;
@@ -128,10 +128,6 @@ a:hover::before {
 
 .menu_icon .navicon:after {
   top: -5px;
-}
-
-.menu_links.active {
-  display: block;
 }
 
 /* Responsive stilovi */

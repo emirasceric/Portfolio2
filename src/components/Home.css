@@ -65,9 +65,9 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   margin-top: -80px;
-  font-size: 60px;
+  font-size: 40px;
   text-align: center;
-  letter-spacing: 20px;
+  letter-spacing: 10px;
 
   background: -webkit-linear-gradient(white, rgb(219, 221, 224), #38495a);
   -webkit-background-clip: text;
@@ -108,8 +108,8 @@ span {
 
 @media (min-width: 1024px) {
   #title {
-    font-size: 60px; /* Manja veličina fonta za naslov */
-    letter-spacing: 20px; /* Manji razmak između slova */
+    font-size: 40px; /* Manja veličina fonta za naslov */
+    letter-spacing: 10px; /* Manji razmak između slova */
   }
 
   #subtitle {
@@ -122,8 +122,8 @@ span {
 
 @media (max-width: 1023px) {
   #title {
-    font-size: 40px; /* Još manja veličina fonta za naslov na vrlo malim zaslonima */
-    letter-spacing: 15px; /* Još manji razmak između slova */
+    font-size: 30px; /* Još manja veličina fonta za naslov na vrlo malim zaslonima */
+    letter-spacing: 10px; /* Još manji razmak između slova */
   }
 
   #subtitle {

@@ -15,13 +15,13 @@ const Contact = () => {
             </p>
             <div className="image-container">
               <a href="mailto:asceric_emir@hotmail.com" target="_blank" rel="noopener noreferrer" className="image-link">
-                <img src="https://i.ibb.co/HTWTMnD/Pngtree-vector-email-icon-3783212.png" alt="Email" />
+                <img src="https://i.ibb.co/6bmDVw1/mail2.png" alt="Email" />
               </a>
               <a href="https://www.linkedin.com/in/emir-asceric/" target="_blank" rel="noopener noreferrer" className="image-link">
-                <img src="https://www.treasurers.org/ACTmedia/linkedin-icon-1-logo-png-transparent.png" alt="LinkedIn" />
+                <img src="https://i.ibb.co/RbZ6TVK/Linked-In-icon-circle-svg.png" alt="LinkedIn" />
               </a>
               <a href="https://github.com/emirasceric" target="_blank" rel="noopener noreferrer" className="image-link">
-                <img src="https://i.ibb.co/Q83pCKf/github-logo-1.png" alt="GitHub" />
+                <img src="https://i.ibb.co/kJ530sN/github-11-xxl.png" alt="GitHub" />
               </a>
             </div>
           </div>

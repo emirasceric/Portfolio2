@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from "react";
 import './NavBar.css';
 
-
 const Navbar = () => {
   const [isHome, setIsHome] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const checkIfHome = () => {
     setIsHome(window.pageYOffset === 0);
-   
   };
-   const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };
 
   useEffect(() => {
     const nav = document.querySelector("nav");
@@ -37,8 +31,6 @@ const Navbar = () => {
       if (hideTimeout) clearTimeout(hideTimeout);
       nav.classList.remove("hidden");
     });
-
-    
 
     nav.addEventListener("mouseout", hideNav);
 
@@ -121,64 +113,66 @@ const Navbar = () => {
     return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   };
 
- return (
-  <nav className={isHome ? "" : "blurred"}>
-    <div
-      className="menu"
-      style={isHome ? {} : { backdropFilter: "blur(10px)" }}
-    >
-      <p className="website_name" onClick={scrollToTop}>
-        <span className="emir">EMIR</span>
-        <span className="asceric">AŠĆERIĆ</span>
-      </p>
-      <div className={`menu_links ${isMenuOpen ? "active" : ""}`}>
-        <a
-          href="#about"
-          className="link"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("about-section");
-          }}
-        >
-          about
-        </a>
-        <a
-          href="#projects"
-          className="link"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("projects-section");
-          }}
-        >
-          projects
-        </a>
-        <a
-          href="#tech"
-          className="link"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("tech-section");
-          }}
-        >
-          tech
-        </a>
-        <a
-          href="#contacts"
-          className="link"
-          onClick={(e) => {
-            e.preventDefault();
-            scrollToSection("contacts-section");
-          }}
-        >
-          contacts
-        </a>
+  return (
+    <nav className={isHome ? "" : "blurred"}>
+      <div
+        className="menu"
+        style={isHome ? {} : { backdropFilter: "blur(10px)" }}
+      >
+        <p className="website_name" onClick={scrollToTop}>
+          <span className="emir">EMIR</span>
+          <span className="asceric">AŠĆERIĆ</span>
+        </p>{" "}
+        <div className="menu_links">
+          <a
+            href="#about"
+            className="link"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("about-section");
+            }}
+          >
+            about
+          </a>
+          <a
+            href="#projects"
+            className="link"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("projects-section");
+            }}
+          >
+            projects
+          </a>
+          <a
+            href="#tech"
+            className="link"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("tech-section");
+            }}
+          >
+            tech
+          </a>
+          
+
+          <a
+            href="#contacts"
+            className="link"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("contacts-section");
+            }}
+          >
+            contacts
+          </a>
+        </div>
+        <div className="menu_icon">
+          <span className="icon"></span>
+        </div>
       </div>
-      <div className="menu_icon" onClick={toggleMenu}>
-        <span className="navicon"></span>
-      </div>
-    </div>
-  </nav>
-);
+    </nav>
+  );
 };
 
 export default Navbar;
