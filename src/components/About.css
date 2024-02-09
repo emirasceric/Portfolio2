@@ -15,6 +15,7 @@
   display: flex; /* Koristi Flexbox za fleksibilan raspored */
   flex-direction: column; /* Stavke su jedna ispod druge */
   align-items: center; /* Centriraj sadržaj horizontalno */
+  font-size: 3vh;;
   text-align: center;
   min-height: 90vh;
   color: white;
@@ -23,7 +24,9 @@
   border-radius: 5%;
   z-index: 1;
   margin: 0 0 0 0;
+
 }
+
 
 
 

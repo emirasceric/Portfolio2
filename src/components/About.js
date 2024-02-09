@@ -63,8 +63,9 @@ const About = () => {
     <section ref={aboutSection} id="about-section">
       <div>
         <div className="text-centered-content" id="about-section-text">
-          <p>
+          <p className="textSirina">
             ABOUT ME
+            <br />
             <br />
             Welcome to my portfolio page! I'm currently a junior developer.
             However, don't let that fool you. Feel free to click around and
@@ -79,7 +80,7 @@ const About = () => {
             the lead, as I find growth in environments that push my boundaries.
             <br></br>
             <br></br>
-            <br></br>GOING BEYOND CODING<br></br>With a diverse background that
+            <br></br>GOING BEYOND CODING<br></br><br />With a diverse background that
             includes 12 years in outlet sales which includes softwer developments 
             and and all kinds of analytics, 5 years in regional sales manager
             wich includes lots of softwer developments excel analitcs,
@@ -95,7 +96,7 @@ const About = () => {
             <br></br>
             <br></br>
             <br></br>
-            VALUE OVER COST, RIGHT?<br></br>
+            VALUE OVER COST, RIGHT?<br></br><br />
             Skip the fancy animations part and head straight to the{" "}
             <a
               href="#contacts-section"
@@ -106,11 +107,7 @@ const About = () => {
             </a>
             section to schedule a meeting with me!
           </p>
-          <ScrollButton
-            className="more-button"
-            buttonText="I want to see more ⬇"
-            sectionId="projects-section"
-          />
+          
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import FirstPage from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import './App.css'; 
+import CarouselComponent from './components/Projectpage'; 
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,11 @@ const App = () => {
             <div className="section">
                 <About />
             </div>
+            <div className="section">
+                <CarouselComponent/> 
+            </div>
+
+            
             <div className="section">
                 <Contact/>
             </div>        

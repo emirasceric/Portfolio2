@@ -1,0 +1,103 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eee;
+  }
+  
+  .cardList {
+    display: flex;
+    position: relative;
+  }
+  
+  .cards__wrapper {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .card {
+    min-width: 300px;
+    margin: 0 15px;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.5; /* Slightly transparent cards to the side */
+  }
+  
+  .current--card {
+    opacity: 1; /* Fully opaque for the current card */
+  }
+  
+  .card__image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .btn--left {
+    left: 0;
+  }
+  
+  .btn--right {
+    right: 0;
+  }
+  
+  .icon svg {
+    fill: #333;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .infoList {
+    margin-top: 20px;
+  }
+  
+  .info {
+    text-align: center;
+  }
+  
+  .loading__wrapper {
+    display: none; /* Initially hidden, show during loading if needed */
+  }
+  
+  .loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Styling for the navigation links */
+  .support a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .support a:hover {
+    color: #3498db;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .card {
+      min-width: 250px;
+    }
+  }
+  
