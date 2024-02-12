@@ -67,25 +67,28 @@ const About = () => {
             ABOUT ME
             <br />
             <br />
-            Welcome to my portfolio page! I'm currently a junior developer.
-            However, don't let that fool you. Feel free to click around and
-            explore a mere 2% of my potential that's showcased here! <br></br>{" "}
-            <br></br>My skillset spans across both front-end and back-end
-            technologies, complemented by a robust understanding of UI/UX design
-            principles. I've had the opportunity to work on a range of projects,
-            from e-commerce sites to automation tools and engaging visual
-            experiences. My thirst for knowledge keeps me in pursuit of the
-            latest trends in areas like Machine Learning and Artificial
-            Intelligence. I am at ease with learning new technologies and taking
-            the lead, as I find growth in environments that push my boundaries.
+            Greetings and welcome to my portfolio! Currently embarking on
+            my journey as a junior developer.<br /> I urge you not to be swayed
+            by the title, I invite you to delve into this space
+            <br></br>{" "}
+            <br></br>
+            My expertise seamlessly bridges the gap between front-end and back-end development,
+            underpinned <br /> by a solid grasp of UI/UX design principles.
+            My journey has led me through diverse projects,<br />
+            from crafting e-commerce platforms to developing automation tools and creating <br />immersive visual experiences.
+            Driven by an insatiable quest for knowledge, <br />
+            I am constantly exploring the latest advancements in Machine Learning and Artificial Intelligence,<br />
+            always eager to embrace new technologies and lead initiatives that stretch my capabilities.
             <br></br>
             <br></br>
-            <br></br>GOING BEYOND CODING<br></br><br />With a diverse background that
-            includes 12 years in outlet sales which includes softwer developments 
+            <br></br>GOING BEYOND CODING<br></br><br />
+            
+            With a diverse background that
+            includes a years in outlet sales which includes softwer developments 
             and and all kinds of analytics, 5 years in regional sales manager
             wich includes lots of softwer developments excel analitcs,
             and a lifelong immersion in digital marketing,
-            photo/video editing, and copywriting, I bring a unique perspective
+            photo/video editing, I bring a unique perspective
             to the table. My experience as an e-commerce store owner on WP,registered in BiH,
             for the past 3 successful years has provided me with invaluable
             insights into a variety of markets and niches. This has only fueled
@@ -96,7 +99,7 @@ const About = () => {
             <br></br>
             <br></br>
             <br></br>
-            VALUE OVER COST, RIGHT?<br></br><br />
+           <br></br><br />
             Skip the fancy animations part and head straight to the{" "}
             <a
               href="#contacts-section"

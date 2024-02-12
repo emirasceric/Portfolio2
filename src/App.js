@@ -5,7 +5,7 @@ import FirstPage from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import './App.css'; 
-import CarouselComponent from './components/Projectpage'; 
+import ProjectPage from './components/Projectpage'; 
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -37,7 +37,7 @@ const App = () => {
                 <About />
             </div>
             <div className="section">
-                <CarouselComponent/> 
+                <ProjectPage/> 
             </div>
 
             
