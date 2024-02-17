@@ -13,7 +13,7 @@ function FirstPage() {
 
       <div id="horizon"></div>
       <div className="glow"></div>
-      <div id="earth"></div>
+      <div className="earth2" id="earth"></div>
       
 
       <div id="title">Front-End Developer</div>

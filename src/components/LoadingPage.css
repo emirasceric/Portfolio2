@@ -15,13 +15,16 @@ body {
     height: 100%;
     width: 100%;
     margin:0 0 0 0 ;
+   
   
   
   
   
    }
    #mainSVG {
-      transform: scale(3); /* povećava SVG za 50% */
+      transform: scale(2.5); /* povećava SVG za 50% */
+    max-height: 100vw;
+    
     }
   
    
@@ -29,7 +32,8 @@ body {
     width: 100%;
     height: 100%;
     visibility: hidden;
-    margin-top: 40%;
+    margin-top: 5%;
+    
     
    }
    
@@ -62,7 +66,7 @@ body {
       margin-top: 1rem;
   }
   
-  ul {
+  .lista_loading {
       position: relative;
       margin: -50;
       padding: -50;
@@ -70,7 +74,7 @@ body {
       justify-content: center;
       align-items: center;
   }
-  ul li {
+ .lista_loading .pocetni {
       list-style: none;
       color: #484848;
       font-size: 5em;
@@ -110,31 +114,31 @@ body {
           text-shadow: 0 0 7px #fb8a8a , 0 0 50px #ff6c00;
       }
   }
-  ul li:nth-child(1)
+  .zaslon_L:nth-child(1)
   {
       animation-delay: .2s;
   }
-  ul li:nth-child(2)
+  .zaslon_O:nth-child(2)
   {
       animation-delay: .4s;
   }
-  ul li:nth-child(3)
+  .zaslon_A:nth-child(3)
   {
       animation-delay: .6s;
   }
-  ul li:nth-child(4)
+  .zaslon_D:nth-child(4)
   {
       animation-delay: .8s;
   }
-  ul li:nth-child(5)
+  .zaslon_I:nth-child(5)
   {
       animation-delay: 1s;
   }
-  ul li:nth-child(6)
+  .zaslon_N:nth-child(6)
   {
       animation-delay: 1.2s;
   }
-  ul li:nth-child(7)
+  .zaslon_G:nth-child(7)
   {
       animation-delay: 1.4s;
   }

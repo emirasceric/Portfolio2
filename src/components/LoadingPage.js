@@ -103,14 +103,14 @@ function LoadingPage() {
       </svg>
 
       <div className="loading-root">
-        <ul>
-        <li>L</li>
-        <li>O</li>
-        <li>A</li>
-        <li>D</li>
-        <li>I</li>
-        <li>N</li>
-        <li>G</li>
+        <ul className='lista_loading'>
+        <li className='pocetni_zaslon_L'>L</li>
+        <li className='pocetni_zaslon_O'>O</li>
+        <li className='pocetni_zaslon_A'>A</li>
+        <li className='pocetni_zaslon_D'>D</li>
+        <li className='pocetni_zaslon_I'>I</li>
+        <li className='pocetni_zaslon_N'>N</li>
+        <li className='pocetni_zaslon_G'>G</li>
       </ul>
       <p className='loading_about'>COPYRIGHT &copy; 2024  
       &reg; <span style={{ color: ' #9ed6f0' }}>EMIR</span>
