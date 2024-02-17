@@ -104,13 +104,13 @@ function LoadingPage() {
 
       <div className="loading-root">
         <ul className='lista_loading'>
-        <li className='pocetni_zaslon_L'>L</li>
-        <li className='pocetni_zaslon_O'>O</li>
-        <li className='pocetni_zaslon_A'>A</li>
-        <li className='pocetni_zaslon_D'>D</li>
-        <li className='pocetni_zaslon_I'>I</li>
-        <li className='pocetni_zaslon_N'>N</li>
-        <li className='pocetni_zaslon_G'>G</li>
+        <li className='pocetni zaslon_L'>L</li>
+        <li className='pocetni zaslon_O'>O</li>
+        <li className='pocetni zaslon_A'>A</li>
+        <li className='pocetni zaslon_D'>D</li>
+        <li className='pocetni zaslon_I'>I</li>
+        <li className='pocetni zaslon_N'>N</li>
+        <li className='pocetni zaslon_G'>G</li>
       </ul>
       <p className='loading_about'>COPYRIGHT &copy; 2024  
       &reg; <span style={{ color: ' #9ed6f0' }}>EMIR</span>

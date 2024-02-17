@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import ScrollButton from "./ScrollButton";
+
 import "../Style.css";
 import "./About.css";
 
