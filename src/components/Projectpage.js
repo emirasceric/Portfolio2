@@ -7,24 +7,28 @@ const App = () => {
   // Definicija tabsData unutar komponente
   const tabsData = [
     {
-      title: 'Midnight Station',
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-      imageUrl: 'https://picsum.photos/id/345/1000/600',
+      title: 'Expenses',
+      content: 'Lorem ipsumfdffffd psumfdffffd dpsumfdffffd dpsumfdffffd dpsumfdffffd ddolor, sit amet consectetur adipisicing elit.',
+      imageUrl: 'https://i.ibb.co/0qZPN66/Expenses.jpg',
+      url: 'https://expenses-clone.vercel.app/',
     },
     {
-      title: 'The Hitchhiker',
+      title: 'Tic Tac Toe',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
-      imageUrl: 'https://picsum.photos/id/352/1000/600',
+      imageUrl: 'https://i.ibb.co/db4Lj2b/tic-tac-toe.jpg',
+      url: 'https://expenses-clone.vercel.app/',
     },
     {
-      title: 'Missing Pages',
+      title: 'Curency converter',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
-      imageUrl: 'https://picsum.photos/id/444/1000/600',
+      imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
+      url: 'https://expenses-clone.vercel.app/',
     },
     {
       title: 'Uninvited Guests',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       imageUrl: 'https://picsum.photos/id/451/1000/600',
+      url: 'https://expenses-clone.vercel.app/',
     },
   ];
 
@@ -41,7 +45,7 @@ const App = () => {
   return (
     <main className={styles.GlavniDio}>
       <header className={styles.Naslov}>
-        <h2 className={styles.Naslov}><span style={{ color: 'rgb(211,38,38)' }}>Table</span> of Contents</h2>
+        <h2 className={styles.Naslov}><span style={{ color: 'rgb(211,38,38)' }}>Projects</span> quick vew</h2>
       </header>
       <section className={styles.sekcija}>
         <ul className={styles.indexes}>
@@ -61,7 +65,7 @@ const App = () => {
               <article className={styles.tabContent}>
                 <h3 className={styles.naslov_teksta}>{tab.title}</h3>
                 <p className={styles.sadrzaj_teksta}>{tab.content}</p>
-                <button className={styles.dugme}>Read More</button>
+                <button className={styles.dugme} onClick={() => window.open(tab.url, '_blank')}>Website</button>
               </article>
               <div className={styles.tab_image}>
                 <img src={tab.imageUrl} alt={tab.title} className={styles.imageStyle} />

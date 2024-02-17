@@ -57,7 +57,8 @@
   font-size: 0.7rem;
   padding: 0.75rem 1rem;
   cursor: pointer;
-  max-width: 100px;
+  max-width: 80px;
+  margin-top: 30%;
   }
   
    .tabs {
@@ -125,12 +126,12 @@
    .naslov_teksta {
     font-family: 'Helvetica', sans-serif;
     font-weight: 900;
-    font-size: 1rem; /* Ako vam je potreban specifičan font-size, koristite jednu vrijednost */
+    font-size: 1.3rem; /* Ako vam je potreban specifičan font-size, koristite jednu vrijednost */
     border-bottom: 2px solid white;
     background-color: transparent;
     color: white;
     padding: 1rem ;
-    margin-top: -13%;
+    margin-top: 2%;
     cursor: text; /* Ako želite da element reagira na klik, koristite cursor: pointer; */
     text-align: left !important; /* Poravnavanje teksta s lijeve strane */
     
@@ -145,6 +146,9 @@
     line-height: 2;
     color: rgba(246, 246, 246, 0.7);
     cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.337);
+    border-radius: 10%/20%;
+    margin-top: 5%;
   }
   
   
@@ -158,6 +162,7 @@
      /* Početno stanje nevidljivosti */
     /* Nema potrebe za transform: translateX(2rem); jer ćemo koristiti animaciju */
     overflow: hidden;
+    margin-top: 20%;
   }
   
   @keyframes slideInFromRight {
