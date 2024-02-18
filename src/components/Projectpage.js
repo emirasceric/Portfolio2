@@ -8,7 +8,7 @@ const App = () => {
   const tabsData = [
     {
       title: 'Expenses',
-      content: 'Lorem ipsumfdffffd psumfdffffd dpsumfdffffd dpsumfdffffd dpsumfdffffd ddolor, sit amet consectetur adipisicing elit.',
+      content: 'Lorem ipsumfdffffd psumfdffffd dpsumfdffffd dpsumfdffffd  dpsumfdffffd ddolor, sit amet consectetur adipisicing elit.',
       imageUrl: 'https://i.ibb.co/0qZPN66/Expenses.jpg',
       url: 'https://expenses-clone.vercel.app/',
     },
@@ -25,10 +25,10 @@ const App = () => {
       url: 'https://expenses-clone.vercel.app/',
     },
     {
-      title: 'Uninvited Guests',
+      title: 'HR-menagment',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
-      imageUrl: 'https://picsum.photos/id/451/1000/600',
-      url: 'https://expenses-clone.vercel.app/',
+      imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
+      url: 'https://hrm-clone-kohl.vercel.app/home',
     },
   ];
 
@@ -43,7 +43,9 @@ const App = () => {
   };
 
   return (
+    
     <main className={styles.GlavniDio}>
+      <section id="project-section"></section>
       <header className={styles.Naslov}>
         <h2 className={styles.Naslov}><span style={{ color: 'rgb(211,38,38)' }}>Projects</span> quick vew</h2>
       </header>

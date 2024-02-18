@@ -3,22 +3,26 @@
    
     display: grid;
     place-items: center;
-  
+    
    
     
   }
   
   .GlavniDio {
-      
+      width: 70%;
+      height: 40rem;
       background-color:transparent;
-      height: 100%;
+    
       font-family: 'Impact', sans-serif;
       color: white;
       padding: 20px;
       overflow: hidden;
       place-items: center;
+      transform: scale(1.4);
+      margin-top: 18%;
   }
   .sekcija {
+    
     display: flex;
     gap: 2rem;
     height: 20vw;
@@ -34,6 +38,7 @@
     font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 20px;
+    margin-left: 11.3%;
     color: white; 
     text-align: left !important; 
     
@@ -102,6 +107,7 @@
     gap: 1rem;   
     transform: translateY(-100%); /* Početno stanje iznad vidljivog područja */
     animation: slideDownContent 0.9s ease-out forwards; /* Dodajemo novu animaciju */
+
    
   }
   .tab_image img {
@@ -115,8 +121,8 @@
     max-width: 100rem;
     max-height: 300rem;
     height: auto;
-  
-    border-radius: 4px;
+   
+    border-radius: 5%;
     animation: slideInFromRight 0.9s ease-out forwards;
 
     
@@ -146,7 +152,7 @@
     line-height: 2;
     color: rgba(246, 246, 246, 0.7);
     cursor: pointer;
-    background-color: rgba(128, 128, 128, 0.337);
+    background-color:rgba(32, 107, 151, );
     border-radius: 10%/20%;
     margin-top: 5%;
   }
@@ -158,11 +164,12 @@
     right: 1rem;
     width: 300px;
     height: 200px;
-    margin-right: -50%;
+    margin-right: -72%;
      /* Početno stanje nevidljivosti */
     /* Nema potrebe za transform: translateX(2rem); jer ćemo koristiti animaciju */
     overflow: hidden;
     margin-top: 20%;
+    opacity: 0.5;
   }
   
   @keyframes slideInFromRight {
