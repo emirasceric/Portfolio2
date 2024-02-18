@@ -16,13 +16,13 @@ const App = () => {
       title: 'Tic Tac Toe',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       imageUrl: 'https://i.ibb.co/db4Lj2b/tic-tac-toe.jpg',
-      url: 'https://expenses-clone.vercel.app/',
+      url: 'https://tic-tac-toe-tau-ebon.vercel.app/',
     },
     {
       title: 'Curency converter',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
-      url: 'https://expenses-clone.vercel.app/',
+      url: 'https://curency-converter.vercel.app/',
     },
     {
       title: 'HR-menagment',
