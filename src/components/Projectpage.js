@@ -19,13 +19,13 @@ const App = () => {
       url: 'https://tic-tac-toe-tau-ebon.vercel.app/',
     },
     {
-      title: 'Curency converter',
+      title: 'C. Exchange',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
       url: 'https://curency-converter.vercel.app/',
     },
     {
-      title: 'HR-menagment',
+      title: 'HR-menager',
       content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
       url: 'https://hrm-clone-kohl.vercel.app/home',
@@ -55,7 +55,8 @@ const App = () => {
             <li
               key={index}
               onClick={() => handleTabClick(index)}
-              className={activeTab === index ? styles.activeIndex : ''}
+              className={`${styles.listaProjectPage} ${activeTab === index ? styles.activeIndex : ''}`}
+              
             >
               0{index + 1}
             </li>
