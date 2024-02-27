@@ -210,7 +210,7 @@ cursor: pointer;
   }
 }
 
-@media (max-width: 385px) {
+@media (max-width: 400px) {
   .Naslov
   {
     font-size: 13px !important;
