@@ -142,3 +142,19 @@ body {
   {
       animation-delay: 1.4s;
   }
+
+
+  @media (max-width: 380px){
+
+ .lista_loading{
+    font-size: 8px;
+    padding: 1%;
+    padding:0 !important;
+    width: 100%;
+    position:center;
+
+    }
+    li {
+        padding: 1% !important;
+    }
+  }

@@ -41,4 +41,19 @@
     color: #fd0000c7  ;
     font-weight: bold;
   }
-  
+
+
+  @media (max-width: 380px) {
+    #about-section  {
+
+   margin-top: -25%;
+  }
+  #about-section-text {
+    margin-top: 0%;
+    padding: -15%;
+  }
+  .textSirina{
+    margin-top: 5%;
+
+  }
+}

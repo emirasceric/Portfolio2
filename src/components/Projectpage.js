@@ -8,25 +8,25 @@ const App = () => {
   const tabsData = [
     {
       title: 'Expenses',
-      content: 'Lorem ipsumfdffffd psumfdffffd dpsumfdffffd dpsumfdffffd  dpsumfdffffd ddolor, sit amet consectetur adipisicing elit.',
+      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
       imageUrl: 'https://i.ibb.co/0qZPN66/Expenses.jpg',
       url: 'https://expenses-clone.vercel.app/',
     },
     {
       title: 'Tic Tac Toe',
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
       imageUrl: 'https://i.ibb.co/db4Lj2b/tic-tac-toe.jpg',
       url: 'https://tic-tac-toe-tau-ebon.vercel.app/',
     },
     {
       title: 'C. Exchange',
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
       imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
       url: 'https://curency-converter.vercel.app/',
     },
     {
       title: 'HR-menager',
-      content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
       imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
       url: 'https://hrm-clone-kohl.vercel.app/home',
     },
