@@ -11,6 +11,7 @@
   border-radius: 5%;
   z-index: 1;
   margin-top: -8%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #about-section-text {
   display: flex; /* Koristi Flexbox za fleksibilan raspored */
@@ -19,7 +20,7 @@
   font-size: 3vh;;
   text-align: center;
   min-height: 90vh;
- 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: white;
   padding: 80px 20px; /* Početni padding */
   background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */

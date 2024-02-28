@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import './App.css'; 
 import ProjectPage from './components/Projectpage'; 
+import Tech from './components/Tech';
 
 const App = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +39,9 @@ const App = () => {
             </div>
             <div className="section">
                 <ProjectPage/> 
+            </div>
+            <div className="section">
+                <Tech/> 
             </div>
 
             

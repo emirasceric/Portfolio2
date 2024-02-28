@@ -39,8 +39,10 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: 11.3%;
+  margin-top: 8% ;
   color: white; 
   text-align: left !important; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   
 
 }
@@ -132,7 +134,7 @@ cursor: pointer;
 
 
  .naslov_teksta {
-  font-family: 'Helvetica', sans-serif;
+ 
   font-weight: 900;
   font-size: 1.3rem; /* Ako vam je potreban specifičan font-size, koristite jednu vrijednost */
   border-bottom: 2px solid white;
@@ -142,14 +144,14 @@ cursor: pointer;
   margin-top: 2%;
   cursor: text; /* Ako želite da element reagira na klik, koristite cursor: pointer; */
   text-align: left !important; /* Poravnavanje teksta s lijeve strane */
-  
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 
 
 .sadrzaj_teksta {
-  font-family: 'Helvetica', sans-serif;
+  
   font-weight: 100;
   line-height: 2;
   color: rgba(246, 246, 246, 0.7);
@@ -157,6 +159,7 @@ cursor: pointer;
   background-color:rgba(32, 107, 151, );
   border-radius: 10%/20%;
   margin-top: 5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -213,32 +216,34 @@ cursor: pointer;
 @media (max-width: 400px) {
   .Naslov
   {
-    font-size: 13px !important;
+    font-size: 18px !important;
     margin-bottom: 8%!important;
-    margin-top: 18%!important;
+    margin-top: 110px !important;
     margin-left: 6%!important;
-    padding-bottom: 5px !important;
+    padding-bottom: 35px !important;
   }
   .naslov_teksta
   {
-    font-size: 9px !important;
+    font-size: 13px !important;
     margin-bottom: -5%!important;
     margin-top: 0%!important;
-    margin-left: -99px !important;
-    padding-bottom: 10px;
-    width: 100px !important;
+    margin-left: -109px !important;
+   padding: 16 ;
+    width: 150px !important;
+    align-items: left; /* Centrira sadržaj po vertikali */
   }
   .sadrzaj_teksta{
-    font-size: 8px !important;
-    width: 130px !important;
-    margin-left: -99px !important;
+    font-size: 11px !important;
+    width: 150px !important;
+    margin-left: -109px !important;
+    align-items: left!important; /* Centrira sadržaj po vertikali */
   }   
 
   .listaProjectPage{
     font-size: 10px !important; /* Manja veličina fonta za podnaslov */
      margin-left: -45px;
      margin-right: 75px;
-    padding: 5px!important;
+    padding: 9px!important;
     
   }
 
@@ -260,22 +265,20 @@ cursor: pointer;
     overflow: hidden;
     margin-top: -25%;
     opacity: 0.5;
+    display: none;
     }
   
   .dugme {
     
-
     display: inline-flex; /* Omogućava fleksibilno raspoređivanje sadržaja */
-    
     align-items: center; /* Centrira sadržaj po vertikali */
-
     padding: 0.5rem 0.5rem !important; /* Postavlja unutrašnji razmak */
     font-size: 7px; /* Veličina teksta unutar dugmeta */
     width: 35px;
     height: 25px;
     margin-left: -169px !important;
     border-radius: 50%/40%;
-   
+  
     
    
    

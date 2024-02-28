@@ -10,8 +10,7 @@ const Contact = () => {
         <div className="section">
           <div className="fixed">
             <p>
-              "Creativity involves breaking out of established patterns in order
-              to look at things in a different way." - Edward de Bono
+            "The only way to do great work is to love what you do." <br/> Steve Jobs
             </p>
             <div className="image-container">
               <a href="mailto:asceric_emir@hotmail.com" target="_blank" rel="noopener noreferrer" className="image-link">
