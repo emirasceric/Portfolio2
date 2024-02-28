@@ -149,7 +149,7 @@ const Navbar = () => {
             className="link"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection("tech-section");
+              scrollToSection("Tech-section");
             }}
           >
             tech

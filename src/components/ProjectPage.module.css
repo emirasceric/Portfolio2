@@ -11,8 +11,7 @@
 .GlavniDio {
     width: 70%;
     height: 40rem;
-    background-color:transparent;
-  
+    background-color:transparent;  
     font-family: 'Impact', sans-serif;
     color: white;
     padding: 20px;
@@ -39,7 +38,7 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   margin-left: 11.3%;
-  margin-top: 8% ;
+  margin-top: 10% ;
   color: white; 
   text-align: left !important; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
