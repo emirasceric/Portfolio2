@@ -33,3 +33,11 @@
 #Tech-section{
   margin-top: 10%;
 }
+
+
+@media (max-width: 400px) {
+  .imgBox{
+    height: 100px; /* Visina boxa */
+  }
+
+}
