@@ -1,5 +1,4 @@
 .gallery {
-  
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* Pravi pet kolona jednake širine */
   gap: 10px; /* Razmak između boxova */
@@ -8,12 +7,15 @@
 }
 
 .imgBox {
-  
   height: 200px; /* Visina boxa */
   display: flex;
   justify-content: center; /* Horizontano centriranje */
   align-items: center; /* Vertikalno centriranje */
   overflow: visible; /* Omogućava izlazak sadržaja iz boxa */
+  box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2), /* Vanjska sjenka */
+              inset 10px 8px 5px  rgba(253, 253, 253, 0.2); /* Unutarnja sjenka */
+  border-radius: 5px; /* Zaobljeni uglovi */
+  padding: 10%;
 }
 
 .image {
@@ -21,6 +23,7 @@
   max-height: 100%; /* Slika neće biti viša od boxa */
   transition: transform 0.5s ease; /* Animacija za transformaciju */
   transform-origin: center; /* Postavlja tačku oko koje se vrši rotacija u centar slike */
+  filter: drop-shadow(2px 4px 6px rgba(247, 245, 245, 0.3)); /* Dodaje efekt sjenke na sliku */
 }
 
 .imgBox:hover .image {
@@ -28,5 +31,5 @@
 }
 
 #Tech-section{
-  margin-top:10%;
+  margin-top: 10%;
 }

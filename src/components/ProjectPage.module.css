@@ -69,6 +69,12 @@ border-radius: 50%/40%;
 align-items: center; /* Centrira sadržaj po vertikali */
 }
 
+.dugme:hover{
+  background-color:white;
+  color: black;
+  transform: scale(1.08)!important;
+}
+
  .tabs {
   list-style-type: none;
   position: relative;

@@ -14,19 +14,19 @@ const App = () => {
     },
     {
       title: 'Tic Tac Toe',
-      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
+      content: 'Iks - Oks: Beskrajna igra gdje dva igrača stavljaju X i O na mrežu 3x3. Poravnaj tri da pobijediš. Cilj je strategija i zabava.',
       imageUrl: 'https://i.ibb.co/db4Lj2b/tic-tac-toe.jpg',
       url: 'https://tic-tac-toe-tau-ebon.vercel.app/',
     },
     {
       title: 'C. Exchange',
-      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
+      content: 'Currency Exchange: Klasična brza pretvorba valuta s aktualnim tečajevima. Preciznost i jednostavnost na jednom mjestu.',
       imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
       url: 'https://curency-converter.vercel.app/',
     },
     {
       title: 'HR-menager',
-      content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
+      content: 'HR-menager: Credentials: admin admin, upravljanje projektima i ljudima, dodavanje novih projekata praćenje postojećih, .',
       imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
       url: 'https://hrm-clone-kohl.vercel.app/home',
     },
@@ -47,7 +47,7 @@ const App = () => {
     <main className={styles.GlavniDio}>
       <section id="project-section"></section>
       <header className={styles.Naslov}>
-        <h2 className={styles.Naslov}><span style={{ color: 'rgb(211,38,38)' }}>Projects</span> quick vew</h2>
+        <h2 className={styles.Naslov}><span style={{ color: 'rgb(211,38,38)' }}>Projects</span> quick view</h2>
       </header>
       <section className={styles.sekcija}>
         <ul className={styles.indexes}>
