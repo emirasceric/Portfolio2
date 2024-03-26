@@ -1,0 +1,39 @@
+.important-flex {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 1px !important; /* 10px je ekvivalent za Tailwind 'gap-10' */
+    margin-top: 14px !important; /* 14px je ekvivalent za Tailwind 'mt-14' */
+   margin-left:10% !important;
+    width: 80%!important;
+    height: 100% !important;
+  
+    
+  }
+
+  canvas {
+    width: 180px !important;
+    height: 130px !important;
+    
+    
+ 
+}
+
+.text{
+    color: white!important;
+    font-size: 48px;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-left: 15%;
+
+}
+.text1{
+    color: white!important;
+    font-size: 28px;
+    text-align: left;
+    margin-left: 15%;
+    opacity: 72%;
+
+
+}
+  

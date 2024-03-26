@@ -1,61 +1,150 @@
-#about-section {
-  display: flex; /* Koristi Flexbox za fleksibilan raspored */
-  flex-direction: column; /* Stavke su jedna ispod druge */
-  align-items: center; /* Centriraj sadržaj horizontalno */
-  text-align: center;
-  min-height: 90vh;
-  max-width: 85%;
-  padding: 3%;
-  color: white;
-  background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */
-  border-radius: 5%;
-  z-index: 1;
-  margin-top: -8%;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#About{
+    height:100%;
+    width:100%;
 }
-#about-section-text {
-  display: flex; /* Koristi Flexbox za fleksibilan raspored */
-  flex-direction: column; /* Stavke su jedna ispod druge */
-  align-items: center; /* Centriraj sadržaj horizontalno */
-  font-size: 3vh;;
-  text-align: center;
-  min-height: 90vh;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: white;
-  padding: 80px 20px; /* Početni padding */
-  background-color: rgba(32, 107, 151, 0.15); /* Pozadinska boja */
-  border-radius: 5%;
-  z-index: 1;
-  margin: 0 0 0 0;
+.textSirina{
+    font-size: 20px;
+    color:white;
+    font-family: "Barlow", sans-serif !important;
+    text-align: left;
+    margin-left: 15%;
+    margin-bottom:1%;
+    background-color:rgba(128, 128, 128, 0.364);
+    margin-right:14%;
+    padding:1% 0% 1% 1%;
+    border-radius:30px;
 
-}
-
-
-
-
-
-
+  }
+  .interduction{
+    font-size: 22px;
+    opacity: 72%;
+    text-align: left;
+    margin-left:14.3%;
+    margin-top:6%;
+    color:white;
   
-
+  }
   
-  .contact-link {
-    color: #fd0000c7  ;
+  .overview{
+    font-size: 58px;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 14%;
+    margin-bottom: 2%;
+    color:white !important;
+    z-index:20;
+  
+    }
+
+
+.card {
+    width: 317px;
+    height: 474px;
+    border-radius: 20px;
+    background: white;
+    position: relative;
+    padding: 1.8rem;
+    border: 4px solid ;
+    margin-bottom: 12%;  
+    
+  
+    overflow: visible;
+   }
+   .cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Razmak između kartica */
+  }
+   .card-details {
+    color: black;
+    height: 100%;
+    gap: .5em;
+    display: grid;
+    place-content: center;
+   }
+   .text-title-front {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-top: -35%;
+
+   }
+   .text-body-front {
+    color: rgb(134, 134, 134);
+   }
+   .card-icon{   
+   
+    width: 128px;
+    height: 128px;
+    margin-left: 31%;
+    border-radius: 10%;
+    cursor: text;
+    margin-bottom: 10%;
+    align-content: center;
+    align-items: center;
+    padding: 1%;
+
+    
+   }
+   .text-title-back {
+    position: absolute;
+    top: 30px; /* Prilagodite prema potrebi */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Prilagodite širinu naslova unutar kartice */
+    text-align: center; /* Centrirajte naslov */
+    font-size: 1.5em;
     font-weight: bold;
   }
-
-
-  @media (max-width: 400px) {
-    #about-section  {
-
-   margin-top: -25%;
+  
+  .text-body-back {
+    position: absolute;
+    top: 80px; /* Prilagodite ovo prema visini naslova kako biste ostavili prostor za naslov */
+    left: 10px; /* Prilagodite ovo kako biste dodali padding sa strane */
+    right: 10px; /* Prilagodite ovo kako biste dodali padding sa strane */
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 15px 15px 0px 15px;
+    height: calc(100% - 60px); /* Oduzmite prostor koji zauzima naslov i padding na dnu */
+    overflow-y: auto; /* Omogućite skrolanje za slučaj dužeg teksta */
+    color: rgb(134, 134, 134);
   }
-  #about-section-text {
-    margin-top: 0%;
-    padding: -15%;
-  }
-  .textSirina{
-    margin-top: 5%;
-    font-size:15px;
-
-  }
-}
+   .card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+   }
+   
+   .text-body {
+    color: rgb(134, 134, 134);
+   }
+   
+   /*Text*/
+   .text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+   }
+   
+   /*Hover*/
+   .card:hover {
+    border-color: #008bf8;
+   
+    box-shadow: 0px 4px 18px 0 rgba(243, 243, 243, 0.55);
+   
+   
+   }
+   
+   .card:hover .card-button {
+    transform: translate(-50%, 50%);
+    opacity: 1;
+   }

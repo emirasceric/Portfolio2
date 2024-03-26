@@ -1,0 +1,124 @@
+#about-section {
+  display: flex; /* Koristi Flexbox za fleksibilan raspored */
+  flex-direction: column; /* Stavke su jedna ispod druge */
+  align-items: center; /* Centriraj sadržaj horizontalno */
+  text-align: center; 
+  padding: 3%;
+  border-radius: 30px;
+  z-index: 1;
+  margin-top: -8%;
+  font-family: "Barlow", sans-serif !important;
+}
+#about-section-text {
+  display: flex; /* Koristi Flexbox za fleksibilan raspored */
+  flex-direction: column; /* Stavke su jedna ispod druge */
+  font-size: 1.1rem;
+  text-align: left;
+  color: rgb(207, 48, 48);
+  font-family: "Barlow", sans-serif !important;
+  border-radius: 30px;
+  z-index: 1;
+  margin-bottom:2%;
+  margin-left: 10%;
+}
+.glavniDio{
+  width: 100%;
+  height: 100%;
+ 
+}
+.textSirina{
+  font-size: 20px;
+  
+}
+.skip{
+  text-align: center;
+}
+.icon-front{
+  background-color: grey;
+  z-index: 1;
+
+}
+
+
+
+
+/* Stilovi za kartice */
+
+
+ .interduction{
+  font-size: 22px;
+  opacity: 72%;
+  text-align: left;
+  margin-left:7.3%;
+  margin-top:6%;
+
+}
+
+.overview{
+  font-size: 58px;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 7%;
+  margin-bottom: 2%;
+
+  }
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  flex-wrap: wrap; /* Omogućava obaranje kartica na manjim ekranima */
+  font-family: "Barlow", sans-serif;
+  margin-left:0%;
+  margin-right:9%;
+}
+
+
+.card {
+  width: 30%; /* Širina svake kartice */
+  background-color: #47454596; /* Boja pozadine kartice */
+  margin: 10px; /* Razmak između kartica */
+  border-radius: 30px; /* Zaobljeni uglovi */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Senka za 3D efekt */
+  font-family: "Barlow", sans-serif;
+  color:white;
+  text-align: justify;
+  
+}
+.naslovkartice{
+  color:white;
+}
+
+
+
+.card-content {
+  padding: 20px; /* Unutrašnji razmak */
+  text-align: center; /* Centriran tekst */
+  color:white;
+ 
+} 
+
+  
+  .contact-link {
+    color: #fd0000c7  ;
+    font-weight: bold;
+  }
+
+
+  @media (max-width: 400px) {
+    #about-section  {
+
+   margin-top: -25%;
+  }
+  #about-section-text {
+    margin-top: 0%;
+    padding: -15%;
+  }
+  .textSirina{
+    margin-top: 5%;
+    font-size:15px;
+
+  }
+}
+
+

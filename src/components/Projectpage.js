@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ProjectPage.module.css';
 
-const App = () => {
+const Project = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   // Definicija tabsData unutar komponente
@@ -11,6 +11,18 @@ const App = () => {
       content: 'Upravljanje troškovima. Aplikacija koja ima zadatak da zapamti sve vaše troškove i prikaže mjesece u kojim ste najviše trošili.',
       imageUrl: 'https://i.ibb.co/0qZPN66/Expenses.jpg',
       url: 'https://expenses-clone.vercel.app/',
+    },
+    {
+      title: 'HR-menager',
+      content: 'HR-menager: Credentials: admin admin, upravljanje projektima i ljudima, dodavanje novih projekata praćenje postojećih, .',
+      imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
+      url: 'https://hrm-clone-kohl.vercel.app/home',
+    },
+    {
+      title: 'Math-magician',
+      content: 'Kalkulator: Znamo da predmeti poput matematike mogu biti problem prilikom učenja. Stoga, ovdje smo da vam olakšamo matematiku i učinimo je zabavnijom!',
+      imageUrl: 'https://i.ibb.co/JcJv75N/math.jpg',
+      url: 'https://math-magicians-eight.vercel.app/',
     },
     {
       title: 'Tic Tac Toe',
@@ -24,12 +36,8 @@ const App = () => {
       imageUrl: 'https://i.ibb.co/SxPsXHH/curency-Converter.jpg',
       url: 'https://curency-converter.vercel.app/',
     },
-    {
-      title: 'HR-menager',
-      content: 'HR-menager: Credentials: admin admin, upravljanje projektima i ljudima, dodavanje novih projekata praćenje postojećih, .',
-      imageUrl: 'https://i.ibb.co/0YrX5gW/hr-menadzment.jpg',
-      url: 'https://hrm-clone-kohl.vercel.app/home',
-    },
+    
+    
   ];
 
   useEffect(() => {
@@ -68,7 +76,7 @@ const App = () => {
               <article className={styles.tabContent}>
                 <h3 className={styles.naslov_teksta}>{tab.title}</h3>
                 <p className={styles.sadrzaj_teksta}>{tab.content}</p>
-                <button className={styles.dugme} onClick={() => window.open(tab.url, '_blank')}>Website</button>
+                <button className={styles.dugme} onClick={() => window.open(tab.url, '_blank')}> Visit</button>
               </article>
               <div className={styles.tab_image}>
                 <img src={tab.imageUrl} alt={tab.title} className={styles.imageStyle} />
@@ -81,4 +89,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Project;

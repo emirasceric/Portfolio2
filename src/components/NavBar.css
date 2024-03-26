@@ -2,7 +2,7 @@
 nav {
    /* Centriranje sadržaja horizontalno */
   position: fixed;
-  top: 5%;
+  top: 2%;
   right: 0; 
   left: 0;
   z-index: 3;
@@ -12,6 +12,7 @@ nav {
   text-transform: uppercase; 
   margin-right: 0;
   font-size: 1.3rem;
+
 }
 
 a {
@@ -58,8 +59,7 @@ a:hover {
 .website_name{
   font-size: 30px;
   cursor: pointer;
-  
-  
+  margin-bottom: 1%; 
 }
 
 

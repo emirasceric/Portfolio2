@@ -1,25 +1,132 @@
+
+.contact-form {
+  transform: translateX(-100%);
+  transition: transform 2s ease-out ;
+  margin: 20px auto;
+  margin-top: 8%;
+  padding:0;
+  border-radius: 30px;
+  background-color: #474545;
+  width: 50%;
+  height: 100%;
+  
+
+ }
+ 
+ .contact-form.show {
+  transform: translateX(0);
+ }
+
+ .naslovIme, .naslovEmail{
+  font-size: 18px ; 
+  text-align: left;
+  margin-left: 2%;
+}
+.naslovMessage{
+  font-size: 18px ;
+  text-align: left;
+  margin-left: 2%;
+}
+.naslovContact{
+  font-size: 48px ;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-top: 1%;
+  
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: bold; 
+ 
+  
+}
+input{
+width: 97.2%;
+height: 40px;
+border: 1px solid #ccc;
+border-radius: 8px;
+font-size: 16px;
+color: #333;
+
+
+}
+
+ textarea {   
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  padding-left: 2%;
+  
+ 
+
+  
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,.25);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  
+}
+#message{
+  width: 95%;
+ 
+}
+
+.dugme {
+  height: 30px!important;
+  width: 90px !important;
+  cursor: pointer !important;
+  padding: 10px 20px !;
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-size: 16px !important;
+  margin-left: -83.5%;
+  transition: background-color 0.3s ease !important;
+  
+}
+
+.dugme:hover {
+ 
+  color:#ffffff !important;
+  background-color:#7f7979 !important;
+}
+
+
 /* Contact.css */
 
-#contacts-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Centriranje sadržaja po visini */
-  background-color: transparent; /* Svijetlo plava pozadina */
-}
+
 
 
 .parallax-wrapper {
   width: 100%;
-  max-width: 100%; /* Možete prilagoditi ovu vrijednost */
-  margin: 0 auto; /* Centrira wrapper unutar sekcije */
-  text-align: center; /* Centrira tekst i ikone unutar wrappera */
+  max-width: 100%; 
+  margin: 0 auto; 
+  text-align: center; 
  
 }
 
 .section .fixed p {
   font-size: 1.2rem;
-  margin-bottom: 2rem; /* Daje prostor između citata i ikona */
+  margin-bottom: 2rem; 
   color: aliceblue;
   
 }
@@ -27,7 +134,7 @@
 .image-container {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Razmak između ikona */
+  gap: 20px; 
   
 
 }
@@ -36,7 +143,11 @@
   width: 50px; /* Početna veličina ikona */
   transition: transform 0.3s ease; /* Animacija za povećanje */
  background-color: transparent;
+ mix-blend-mode: screen;
  
+}
+.fixed{
+  margin-top: 2%;
 }
 
 .image-link:hover img {

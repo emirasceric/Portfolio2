@@ -9,8 +9,8 @@
 }
 
 .GlavniDio {
-    width: 70%;
-    height: 40rem;
+    width: 100%;
+    height: 100%;
     background-color:transparent;  
     font-family: 'Impact', sans-serif;
     color: white;
@@ -19,6 +19,7 @@
     place-items: center;
     transform: scale(1.4);
     margin-top: 18%;
+    
 }
 .sekcija {
   
@@ -30,15 +31,17 @@
   margin: auto; /* Centriranje */
   max-height: 80vh;
   max-width: 90vh;
+  transform: scale(1.15);
+
 }
 
 
  .Naslov {
   font-size: 2rem;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-left: 11.3%;
-  margin-top: 10% ;
+  margin-bottom: 3%;
+  margin-left: 13%;
+  margin-top: -1% ;
   color: white; 
   text-align: left !important; 
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -64,9 +67,11 @@ font-size: 0.7rem;
 padding: 0.75rem 1rem;
 cursor: pointer;
 max-width: 80px;
-margin-top: 30%;
+margin-top: 10%;
 border-radius: 50%/40%;
 align-items: center; /* Centrira sadržaj po vertikali */
+overflow: hiden;
+z-index:1;
 }
 
 .dugme:hover{
@@ -165,21 +170,23 @@ cursor: pointer;
   border-radius: 10%/20%;
   margin-top: 5%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ 
 }
 
 
 
 .tab_image {
   position: absolute;
-  right: 1rem;
-  width: 300px;
+  
+  width: 285px;
   height: 200px;
-  margin-right: -72%;
+  margin-right: -119%;
    /* Početno stanje nevidljivosti */
   /* Nema potrebe za transform: translateX(2rem); jer ćemo koristiti animaciju */
   overflow: hidden;
   margin-top: 20%;
   opacity: 0.5;
+  margin-left: 55% !important;
 }
 
 @keyframes slideInFromRight {
