@@ -10,7 +10,7 @@
     margin-left: 15%;
     margin-bottom:1%;
     background-color:rgba(128, 128, 128, 0.364);
-    margin-right:14%;
+    margin-right:13.5%;
     padding:1% 0% 1% 1%;
     border-radius:30px;
 
@@ -42,13 +42,13 @@
     height: 474px;
     border-radius: 20px;
     background: white;
+    filter:brightness(90%);
     position: relative;
     padding: 1.8rem;
     border: 4px solid ;
-    margin-bottom: 12%;  
-    
-  
+    margin-bottom: 12%;   
     overflow: visible;
+
    }
    .cards-container {
     display: flex;

@@ -4,10 +4,7 @@ import "./About.css";
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import ReactCardFlip from 'react-card-flip';
-
 import { scrollToSection } from './scrollToSection';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
 import { frontend, learning, ecomerce } from '../assets';
 
 
@@ -15,7 +12,7 @@ const cardData = [
   {
     id: 1,
     frontTitle: "Code Meets Design",
-   frontIcon: frontend,
+    frontIcon: frontend,
     frontText: "Intuitive Interfaces, Engaging Experiences",
     backTitle: "Full-Stack Mastery",
     backText: ` My professional journey seamlessly blends the art of front-end and back-end development, ensuring a cohesive and efficient digital experience.
@@ -138,11 +135,11 @@ const About = () => {
     <p className="textSirina skip">
          Skip the fancy animations part and head straight to the{" "}
          <a href="#contacts" className="link" style={{ color: 'red' }} onClick={(e) => {
-  e.preventDefault();
-  scrollToSection("contacts-section");
-}}>
-  contacts
-</a>
+              e.preventDefault();
+              scrollToSection("contacts-section");
+              }}>
+              contacts
+          </a>
 
         {' '}section to schedule a meeting with me!
       </p>

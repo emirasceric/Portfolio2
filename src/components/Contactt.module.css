@@ -1,0 +1,66 @@
+.container {
+  display: flex !important;
+  width: 80vw  !important;
+  
+
+}
+
+.panel {
+  background-size: cover  !important;
+  background-position: center !important ;
+  background-repeat: no-repeat  !important;
+  height: 80vh ;
+  border-radius: 50px !;
+  color: #fff !important;
+  cursor: pointer !important;
+  flex: 0.5 !important;
+  margin: 10px !important;
+  position: relative !important;
+  -webkit-transition: all 700ms ease-in!important;
+  transition: all 700ms ease-in !important;
+  border-radius: 40px  !important;
+  
+}
+.button1 { 
+  position: absolute;    
+  width: 88px;
+  height: 48px;
+  bottom: 20px;
+  left: 40px;
+
+}
+
+
+
+
+.button2{
+  transition: opacity 0.3s ease-in;
+  position: absolute;
+  bottom: 20px;
+  left: 140px;
+  background-color:grey;
+  width: 88px;
+  height: 48px;
+
+}
+
+.panel .h3 {
+  font-size: 24px !important;
+  position: absolute!important;
+  bottom: 20px!important;
+  left: 20px!important;
+  margin: 0!important;
+  opacity: 0!important;
+
+}
+
+
+.panel.active  {
+  flex: 2!important;
+}
+
+.panel.active .h3{
+  opacity: 1!important;
+  transition: opacity 0.3s ease-in 0.4s!important;
+}
+
