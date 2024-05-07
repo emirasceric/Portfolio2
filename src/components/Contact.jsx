@@ -67,7 +67,7 @@ function Contact() {
         <input
           type="text"
           id="name"
-          autocomplete="name"
+          autoComplete="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="  What is your name?"
@@ -80,7 +80,7 @@ function Contact() {
           type="email"
           id="email"
           value={email}
-          autocomplete="email"
+          autoComplete="email"
           onChange={(e) => setEmail(e.target.value)}
           placeholder="  What's your email?"
         />

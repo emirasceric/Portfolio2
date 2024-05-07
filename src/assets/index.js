@@ -49,10 +49,24 @@ import math from './projects/math.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+import city1 from './projects/city1.png';
+import city2 from './projects/city2.png';
+import city3 from './projects/city3.png';
+import planet1 from './projects/planet1.png';
+import planet2 from './projects/planet2.png';
+import CConverter from "./backgrounds/CConverter.JPG";
+
 
 export {
   bwmap,
+  CConverter,
+
   nairobi,
+  city1,
+  city2,
+  city3,
+  planet1,
+  planet2,
   whiteabstract,
   worldmap,
   logo,

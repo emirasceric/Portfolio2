@@ -5,7 +5,7 @@ import FirstPage from './components/Home';
 import Contact from './components/Contact';
 import About from './components/About';
 import './App.css'; 
-import Contactt from './components/Contactt'; 
+import Project from './components/Project'; 
 import Tech from './components/Tech';
 
 const App = () => {
@@ -44,7 +44,7 @@ const App = () => {
             </div>
             
             <div className="section">
-           <Contactt/>
+           <Project/>
             </div>
            
               

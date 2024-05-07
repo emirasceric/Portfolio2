@@ -53,7 +53,7 @@
    .cards-container {
     display: flex;
     justify-content: center;
-    gap: 30px; /* Razmak između kartica */
+    gap: 20px; /* Razmak između kartica */
   }
    .card-details {
     color: black;
@@ -147,4 +147,7 @@
    .card:hover .card-button {
     transform: translate(-50%, 50%);
     opacity: 1;
+   }
+   .skip{
+    margin-bottom: 150px;
    }
