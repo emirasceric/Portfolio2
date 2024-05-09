@@ -11,8 +11,12 @@ const cardData = [
     title: "Card 1",
     backgroundImage: math1,
     buttonUrls: {
-      button1: "https://www.klix.ba/",
-      button2: "https://example.com/link2"
+      button1: "https://github.com/emirasceric/Math_Magicians",
+      button2: "https://math-magicians-eight.vercel.app/"
+    },
+    iconUrls: {
+      button1: "https://i.ibb.co/kJ530sN/github-11-xxl.png",
+      button2: "https://i.ibb.co/yNxf8Gp/deploy2.png"
     }
   },
   {
@@ -20,8 +24,12 @@ const cardData = [
     title: "Card 2",
     backgroundImage: thisSite,
     buttonUrls: {
-      button1: "https://example.com/link1",
-      button2: "https://example.com/link2"
+      button1: "https://github.com/emirasceric/Portfolio2",
+      button2: "https://portfolio3-pi-lyart.vercel.app/"
+    },
+    iconUrls: {
+      button1: "https://i.ibb.co/kJ530sN/github-11-xxl.png",
+      button2: "https://i.ibb.co/yNxf8Gp/deploy2.png"
     }
   },
   {
@@ -29,8 +37,12 @@ const cardData = [
     title: "Card 3",
     backgroundImage: TicTacToe,
     buttonUrls: {
-      button1: "https://example.com/link1",
-      button2: "https://example.com/link2"
+      button1: "https://github.com/emirasceric/TicTocToe",
+      button2: "https://tic-tac-toe-tau-ebon.vercel.app/"
+    },
+    iconUrls: {
+      button1: "https://i.ibb.co/kJ530sN/github-11-xxl.png",
+      button2: "https://i.ibb.co/yNxf8Gp/deploy2.png"
     }
   },
   {
@@ -38,8 +50,12 @@ const cardData = [
     title: "Card 4",
     backgroundImage: Expenses,
     buttonUrls: {
-      button1: "https://example.com/link1",
-      button2: "https://example.com/link2"
+      button1: "https://github.com/emirasceric/Expenses",
+      button2: "https://expenses-clone.vercel.app/"
+    },
+    iconUrls: {
+      button1: "https://i.ibb.co/kJ530sN/github-11-xxl.png",
+      button2: "https://i.ibb.co/yNxf8Gp/deploy2.png"
     }
   },
   {
@@ -47,8 +63,12 @@ const cardData = [
     title: "Card 5",
     backgroundImage: CConverter,
     buttonUrls: {
-      button1: "https://example.com/link1",
-      button2: "https://example.com/link2"
+      button1: "https://github.com/emirasceric/curencyConverter",
+      button2: "https://curency-converter.vercel.app/"
+    },
+    iconUrls: {
+      button1: "https://i.ibb.co/kJ530sN/github-11-xxl.png",
+      button2: "https://i.ibb.co/yNxf8Gp/deploy2.png"
     }
   }
 ];
@@ -110,12 +130,14 @@ const Project = () => {
           {expandedIndex === index && (
             <div id={styles.cardButtons}>
 
+              <div id={styles.containerDugmad}>
+
               <button id={styles.button}onClick={(e) => {
                 e.stopPropagation();
                 handleButtonClick(card.buttonUrls.button1);
                 }}>
                   
-                  <img src="https://i.ibb.co/kJ530sN/github-11-xxl.png" alt="GitHub" />
+                  <img src={card.iconUrls.button1} alt="Button 1 Icon" />
                 
                 </button>
 
@@ -123,10 +145,10 @@ const Project = () => {
               e.stopPropagation();
               handleButtonClick(card.buttonUrls.button2);
             }}>
-              <img src="https://i.ibb.co/RbZ6TVK/Linked-In-icon-circle-svg.png" alt="LinkedIn" style={{ marginRight: '5px', verticalAlign: 'middle' }} />
+              <img src={card.iconUrls.button2} alt="Button 2 Icon" />
               
             </button>
-
+            </div>
             </div>
           )}
         </motion.div>

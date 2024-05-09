@@ -57,6 +57,12 @@ img{
   filter: none !important;
   transition:  0.5s ease;
 }
+#containerDugmad{
+  width: 600px;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.565);
+
+}
 img:hover {
   transform: scale(1.1); /* Povećava ikonu za 20% na hover */
   transition: transform 0.3s ease;
