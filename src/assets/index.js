@@ -46,6 +46,10 @@ import microverse from './company/microverse.png';
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math.png';
+import math1 from './projects/math1.JPG';
+
+import Expenses from './projects/Expenses.JPG';
+import TicTacToe from './projects/TicTacToe.JPG';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
@@ -56,11 +60,14 @@ import planet1 from './projects/planet1.png';
 import planet2 from './projects/planet2.png';
 import CConverter from "./backgrounds/CConverter.JPG";
 
+import thisSite from "./backgrounds/thisSite.JPG";
 
 export {
   bwmap,
   CConverter,
-
+  thisSite,
+  Expenses,
+  TicTacToe,
   nairobi,
   city1,
   city2,
@@ -104,6 +111,7 @@ export {
   komikult,
   leaderboard,
   math,
+  math1,
   movie,
   nyeusi,
   space,

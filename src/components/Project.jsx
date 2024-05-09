@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Project.module.css';
-import { CConverter, learning, ecomerce } from '../assets';
+import { CConverter, math1, thisSite, TicTacToe,Expenses } from '../assets';
 import { fadeIn } from '../utils/motion';
 import { textVariant } from '../utils/motion';
 
@@ -9,7 +9,7 @@ const cardData = [
   {
     id: 6,
     title: "Card 1",
-    backgroundImage: CConverter,
+    backgroundImage: math1,
     buttonUrls: {
       button1: "https://www.klix.ba/",
       button2: "https://example.com/link2"
@@ -18,7 +18,7 @@ const cardData = [
   {
     id: 7,
     title: "Card 2",
-    backgroundImage: learning,
+    backgroundImage: thisSite,
     buttonUrls: {
       button1: "https://example.com/link1",
       button2: "https://example.com/link2"
@@ -27,7 +27,7 @@ const cardData = [
   {
     id: 8,
     title: "Card 3",
-    backgroundImage: ecomerce,
+    backgroundImage: TicTacToe,
     buttonUrls: {
       button1: "https://example.com/link1",
       button2: "https://example.com/link2"
@@ -36,7 +36,7 @@ const cardData = [
   {
     id: 9,
     title: "Card 4",
-    backgroundImage: CConverter,
+    backgroundImage: Expenses,
     buttonUrls: {
       button1: "https://example.com/link1",
       button2: "https://example.com/link2"
@@ -112,11 +112,21 @@ const Project = () => {
 
               <button id={styles.button}onClick={(e) => {
                 e.stopPropagation();
-                handleButtonClick(card.buttonUrls.button1);}}>Button 1</button>
+                handleButtonClick(card.buttonUrls.button1);
+                }}>
+                  
+                  <img src="https://i.ibb.co/kJ530sN/github-11-xxl.png" alt="GitHub" />
+                
+                </button>
 
-              <button id={styles.button}onClick={(e) => {
-                e.stopPropagation(); 
-                handleButtonClick(card.buttonUrls.button2);}}>Button 2</button>
+            <button id={styles.button} onClick={(e) => {
+              e.stopPropagation();
+              handleButtonClick(card.buttonUrls.button2);
+            }}>
+              <img src="https://i.ibb.co/RbZ6TVK/Linked-In-icon-circle-svg.png" alt="LinkedIn" style={{ marginRight: '5px', verticalAlign: 'middle' }} />
+              
+            </button>
+
             </div>
           )}
         </motion.div>

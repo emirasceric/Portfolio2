@@ -9,34 +9,63 @@
 
 #card {
   width: 200px;
-  height: 400px;
+  height: 600px;
   background-color: lightgray;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   overflow: hidden;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 50px ;
   transition: all 0.5s ease;
   background-size: cover;  /* Ako želite da se slika razvuče kako bi pokrila cijelu karticu */
   background-position: center;  /* Centriranje slike */
   margin: 0.5rem;
-  filter:grey;
+  filter: grayscale(100%);
+ 
   margin-bottom: 250px;
   
+  box-shadow: 0px 4px 18px 0 rgba(243, 243, 243, 0.55);
  
+
+  
+ 
+}
+#card * {
+  filter: none !important;
 }
 
 #cardButtons {
   display: flex;
   gap: 10px;
+  filter: none !important;
 }
 
 #button {
   padding: 8px 16px;
   border: none;
-  background-color: #007BFF;
+  background-color:transparent;
   color: white;
   cursor: pointer;
   border-radius: 4px;
+  filter: none !important;
+  transition:  0.5s ease;
+}
+
+img{
+  width: 100px;
+  filter: none !important;
+  transition:  0.5s ease;
+}
+img:hover {
+  transform: scale(1.1); /* Povećava ikonu za 20% na hover */
+  transition: transform 0.3s ease;
+  filter: none !important;
+  transition:  0.5s ease;
+}
+#card:hover {
+ 
+  
+  filter: none !important;
+  transition:  0.5s ease;
 }
